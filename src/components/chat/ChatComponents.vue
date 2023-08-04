@@ -1,7 +1,7 @@
 <template>
     <div class="common-layout">
         <el-container>
-            <el-header>gpt前端框架</el-header>
+            <el-header>通用gpt</el-header>
             <el-container>
                 <el-aside width="200px"><el-row justify="start">
                         <el-col :span="6">
@@ -24,8 +24,10 @@
                     </el-row>
                     <el-row>
                         <el-col :span="8" :offset="1">
-                            <el-button @click="state.dialogVisible = true" type="success" size="small"
-                                text="true">设置apiKey</el-button>
+                            <el-tooltip content="设置获取到的apikey" placement="bottom" effect="light">
+                                <el-button @click="state.dialogVisible = true" type="success" size="small"
+                                    text="true">设置apiKey</el-button>
+                            </el-tooltip>
                         </el-col>
                         <el-col :span="8" :offset="1">
                             <el-popconfirm title="确定要清除apiKey吗？">
@@ -38,8 +40,10 @@
                     </el-row>
                     <el-row>
                         <el-col :span="8" :offset="1">
-                            <el-button @click="state.urlDialogVisible = true" type="success" size="small"
-                                text="true">设置url前缀</el-button>
+                            <el-tooltip content="设置要请求的后端的接口域名" placement="bottom" effect="light">
+                                <el-button @click="state.urlDialogVisible = true" type="success" size="small"
+                                    text="true">设置url前缀</el-button>
+                            </el-tooltip>
                         </el-col>
                         <el-col :span="8" :offset="1">
                             <el-popconfirm title="确定要清除url前缀吗？">
@@ -78,7 +82,7 @@
                                 <el-text tag="b"></el-text>
                             </el-col>
                             <el-col :span="17">
-                                <el-input type="textarea" :autosize="{ minRows: 4, maxRows: 15 }" placeholder="请输入您的问题..." v-model="state.content">
+                                <el-input type="textarea" :autosize="{ minRows: 4, maxRows: 15 }" placeholder="请输入您的问题..." v-model="state.content" clearable >
                                 </el-input>
                             </el-col>
                             <el-col :span="2">
