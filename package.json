@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "pnpm i && pnpm run dev",
+        "build": "pnpm i && pnpm run build",
         "start": "pnpm run dev",
         "preview": "vite preview"
     },
