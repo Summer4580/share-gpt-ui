@@ -7,7 +7,7 @@
         "dev": "vite",
         "build": "pnpm i && pnpm run dev",
         "start": "pnpm run dev",
-        "preview": "vite preview",
+        "preview": "vite preview"
     },
     "dependencies": {
         "@kangc/v-md-editor": "^2.3.16",
