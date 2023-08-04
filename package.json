@@ -4,11 +4,13 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "serve": "vite preview"
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview",
+        "deploy": "vercel --prod"
     },
     "dependencies": {
+        "@element-plus/icons-vue": "^2.1.0",
         "@kangc/v-md-editor": "^2.3.16",
         "axios": "^1.4.0",
         "element-plus": "^2.3.8",
